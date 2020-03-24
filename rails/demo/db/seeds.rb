@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Product.delete_all  
+Product.create(:title => 'Programming in Ruby',
+                 :description => %{<p> Ruby is th fastest growing language</p>},
+                 :image_url => '/home/riyan/Pictures/hello.png',
+                 :price => 49.50)
+
+
